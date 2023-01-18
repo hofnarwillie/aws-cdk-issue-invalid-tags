@@ -52,7 +52,6 @@ export class AwsCdkIssueInvalidTagsStack extends cdk.Stack {
           CorsHttpMethod.DELETE,
         ],
       },
-      // this is needed so the API cannot be invoked by the default aws endpoint like https://{api_id}.execute-api.{region}.amazonaws.com endpoint
       disableExecuteApiEndpoint: true,
       defaultDomainMapping: {
         domainName: httpApiDomainName,
